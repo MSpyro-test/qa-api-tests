@@ -59,14 +59,14 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"// Check status code\r",
-							"pm.test(\"Status code is 201\", function () {\r",
+							"// ✅ Check status code\r",
+							"pm.test(\"Status code is 201\", () => {\r",
 							"    pm.expect(pm.response.code).to.eql(201);\r",
 							"});\r",
 							"\r",
-							"// Check response contains id\r",
-							"pm.test(\"Response contains id\", function () {\r",
-							"    let jsonData = pm.response.json();\r",
+							"// ✅ Check response contains id\r",
+							"pm.test(\"Response contains id\", () => {\r",
+							"    const jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData).to.have.property(\"id\");\r",
 							"});\r",
 							""
