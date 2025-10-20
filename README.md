@@ -14,10 +14,10 @@ newman run postman_collection.json -e postman_environment.json -r cli,html
 ### Test Results
 ![API Test Report](report-screenshot.png)
 
-- ✅ **5/5 Assertions Passed**
-- ✅ **2 API Requests Executed** 
-- ✅ **0 Failures**
-- ⚡ **Average Response Time: 66ms**
+-  **5/5 Assertions Passed**
+-  **2 API Requests Executed** 
+-  **0 Failures**
+-  **Average Response Time: 66ms**
 
 ### Reports Generated
 - **CLI Report**: Real-time results in terminal
