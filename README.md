@@ -4,7 +4,7 @@
 χρησιμοποιώντας το εργαλείο Newman (το “CLI version” του Postman),
 μέσα από ένα GitHub Actions pipeline (δηλαδή αυτοματοποιημένο workflow).
 
-## 📊 Test Reports
+##  Test Reports
 
 ### Example Test Execution
 ```bash
