@@ -11,22 +11,22 @@
 			"name": "GET posts",
 			"event": [
 				{
-					"listen": "prerequest",
+					"listen": "test",
 					"script": {
 						"exec": [
+							"// GET Request Tests\r",
 							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.code).to.equal(200);\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Response is a non-empty array\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
+							"    const jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData).to.be.an('array').that.is.not.empty;\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Response time is < 2000ms\", function () {\r",
 							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-							"});\r",
-							""
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {},
@@ -56,7 +56,7 @@
 			"name": "POST posts",
 			"event": [
 				{
-					"listen": "prerequest",
+					"listen": "test",
 					"script": {
 						"exec": [
 							"// ✅ Check status code\r",

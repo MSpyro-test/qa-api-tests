@@ -1,0 +1,25 @@
+{
+  "name": "MSpyro-test",
+  "version": "1.0.0",
+  "description": "API Tests with Newman and Allure Reporting",
+  "main": "index.js",
+  "scripts": {
+    "test:newman": "newman run \"collections/JSONPlaceholder API Tests.postman_collection.json\" -e \"environments/postman_environment.json\" -r allure",
+    "test:newman:html": "newman run \"collections/JSONPlaceholder API Tests.postman_collection.json\" -e \"environments/postman_environment.json\" -r htmlextra,allure",
+    "report:generate": "allure generate allure-results --clean",
+    "report:open": "allure open allure-report",
+    "test:full": "npm run test:newman && npm run report:generate && npm run report:open"
+  },
+  "keywords": [
+    "api-testing",
+    "newman",
+    "allure"
+  ],
+  "author": "MANOLO",
+  "license": "ISC",
+  "devDependencies": {
+    "allure-commandline": "^2.34.1",
+    "newman": "^5.3.2",
+    "newman-reporter-allure": "^1.1.0"
+  }
+}

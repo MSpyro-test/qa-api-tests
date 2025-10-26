@@ -1,0 +1,10 @@
+// ✅ Check status code
+pm.test("Status code is 201", () => {
+    pm.expect(pm.response.code).to.eql(201);
+});
+
+// ✅ Check response contains id
+pm.test("Response contains id", () => {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property("id");
+});
