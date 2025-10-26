@@ -9,6 +9,10 @@ reports/
 test-results/
 coverage/
 
+# Allure Reports
+allure-report/
+allure-results/
+
 # Environment files
 .env
 .env.local
