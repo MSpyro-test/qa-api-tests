@@ -12,7 +12,7 @@ newman run postman_collection.json -e postman_environment.json -r cli,html
 ```
 
 ### Test Results
-![API Test Report](report-screenshot.png)
+
 
 -  **5/5 Assertions Passed**
 -  **2 API Requests Executed** 
@@ -33,13 +33,9 @@ newman run postman_collection.json -e postman_environment.json -r cli,html
 
 
 ### Test Results
-![Allure Overview](screenshots/allure-overview.png)
+
 *Overview dashboard showing 100% test success rate*
-
-![Allure Behaviors](screenshots/allure-behaviors.png)
 *Test suites with detailed execution results*
-
-![Allure Graphs](screenshots/allure-graphs.png)
 *Analytics and execution trends*
 
 
