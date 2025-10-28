@@ -31,14 +31,6 @@ newman run postman_collection.json -e postman_environment.json -r cli,html
  **Visual analytics** with graphs and execution trends
  **Step-by-step execution** details for each API call
 
-### Quick Start
-```bash
-# Install dependencies
-npm install
-
-# Run complete test cycle (tests + report generation + open report)
-npm run test:full
-```
 
 ### Test Results
 ![Allure Overview](screenshots/allure-overview.png)
@@ -50,21 +42,4 @@ npm run test:full
 ![Allure Graphs](screenshots/allure-graphs.png)
 *Analytics and execution trends*
 
-### Available Scripts
-| Command | Description |
-|---------|-------------|
-| `npm run test:newman` | Run tests with Allure reporter |
-| `npm run test:newman:html` | Run tests with HTML & Allure reporters |
-| `npm run report:generate` | Generate Allure report from results |
-| `npm run report:open` | Open Allure report in browser |
-| `npm run test:full` | Complete test cycle (recommended) |
 
-### Project Structure
-```
-MSpyro-test/
-├── collections/          # Postman collections
-├── environments/         # Postman environments  
-├── screenshots/          # Allure report examples
-├── package.json          # Dependencies & automation scripts
-└── README.md            # Project documentation
-```
